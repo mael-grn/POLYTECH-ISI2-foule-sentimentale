@@ -1,20 +1,26 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/global.css" />
+
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <h1>Connexion</h1>
         <form id="login-form">
-            <input type="email" placeholder="Email" name="email" id="email"/>
-            <input type="password" placeholder="Mot de passe" name="mot_de_passe" id="mot_de_passe"/>
+            <input type="email" placeholder="Email" name="email" id="email" />
+            <input type="password" placeholder="Mot de passe" name="mot_de_passe" id="mot_de_passe" />
             <p id="error"></p>
             <button type="submit">Connexion</button>
+            <a href="/auth/register/">Pas de compte ?</a>
+
         </form>
-        <a href="/auth/register/">Pas de compte ?</a>
     </main>
 </body>
 <script src="../../js/pages/loginregister.js" type="module"></script>
+
 </html>

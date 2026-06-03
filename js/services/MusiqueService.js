@@ -10,4 +10,7 @@ export default class MusiqueService {
     static async getMusicById(id) {
         return ApiUtils.get('/musiques/'+id)
     }
+    static async buyMusic(id) {
+        return ApiUtils.post('/musiques/'+id+'/buy')
+    }
 }

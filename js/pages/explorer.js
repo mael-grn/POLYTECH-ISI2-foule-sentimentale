@@ -23,15 +23,15 @@ try {
 const free = await MusiqueService.getFreeMusics();
 
 for (const artist of artists) {
-    artistesConteneur.appendChild(HTMLUtils.autoGenerateLinkForEntity(artist, 'artiste', '/artistes?id=' + artist.id));
+    artistesConteneur.appendChild(HTMLUtils.autoGenerateComponentForEntity(artist, 'artiste', '/artistes?id=' + artist.id));
 }
 
 for (const genre of genres) {
-    genreConteneur.appendChild(HTMLUtils.autoGenerateLinkForEntity(genre, 'genre', '/genres?id=' + genre.id));
+    genreConteneur.appendChild(HTMLUtils.autoGenerateComponentForEntity(genre, 'genre', '/genres?id=' + genre.id));
 }
 
 for (const music of free) {
-    musiqueConteneur.appendChild(HTMLUtils.autoGenerateLinkForEntity(music, 'music', 'musiques?id=' + music.id));
+    musiqueConteneur.appendChild(HTMLUtils.autoGenerateComponentForEntity(music, 'musique', 'musiques?id=' + music.id));
 }
 
 ComponentManager.drawNavBar()
